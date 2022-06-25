@@ -1,0 +1,24 @@
+{
+  "name": "pixi-sticky-field",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c --environment BUILD:production",
+    "watch": "rollup -cw"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.2",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "rollup": "^2.50.5",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^1.1.0"
+  },
+  "dependencies": {
+    "matter-js": "^0.18.0",
+    "pixi.js": "^6.0.4"
+  }
+}
