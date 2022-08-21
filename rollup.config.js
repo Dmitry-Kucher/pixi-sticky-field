@@ -22,10 +22,10 @@ export default {
         ...process.env.BUILD === 'production' ? [alias({
             entries: [{
                 find: /^(@pixi\/([^\/]+))$/,
-                replacement: '$1/dist/esm/$2.min.js',
+                replacement: 'node_modules/$1/dist/esm/$2.min.mjs',
             }, {
                 find: 'pixi.js',
-                replacement: 'pixi.js/dist/esm/pixi.min.js',
+                replacement: 'node_modules/pixi.js/dist/esm/pixi.min.mjs',
             }]
         })] : [],
         /**
