@@ -44,7 +44,7 @@ export default {
          * and do not have modules bundles available
          */
         commonjs(),
-        serve({}),
-        livereload(),
+        process.env.BUILD !== 'production' ? serve({}) : '',
+        process.env.BUILD !== 'production' ? livereload() : '',
     ]
 };

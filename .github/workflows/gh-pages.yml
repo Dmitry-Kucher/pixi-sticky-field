@@ -18,6 +18,9 @@ jobs:
         run: |
           npm ci
           npm run build
+          mkdir -p build
+          cp bundle.js build/bundle.js
+          cp index.html build/index.html
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
