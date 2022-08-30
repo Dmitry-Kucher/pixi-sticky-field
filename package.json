@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup -c --environment BUILD:production",
-    "watch": "rollup -cw"
+    "watch": "rollup -cw",
+    "lint": "eslint src/**",
+    "lint:fix": "eslint src/** --fix"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +15,9 @@
     "@rollup/plugin-alias": "^3.1.2",
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
+    "eslint": "8.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
     "rollup": "^2.50.5",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-serve": "^1.1.0"
