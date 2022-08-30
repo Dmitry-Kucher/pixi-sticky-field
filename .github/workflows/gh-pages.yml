@@ -1,9 +1,8 @@
-name: Build and Deploy
+name: Deploy Demo Page
 on:
   push:
     branches:
       - main
-#on: push
 permissions:
   contents: write
 jobs:
